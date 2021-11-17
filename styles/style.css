@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Ribeye&family=Roboto:wght@700&family=Source+Sans+Pro:wght@200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-size: 6px;
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  width: 90%;
+  height: auto;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1440;
+  height: 70px;
+  background-color: #ffffff;
+  margin-top: 14px;
+  margin-left: 17px;
+  font-size: 9px;
+}
+.header__online {
+  margin-right: 735px;
+  margin-top: 9px;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 21.13px;
+  width: 200px;
+}
+.header__online::before {
+  content: "  " url(/images/Ellipse2.png);
+}
+.header__coin {
+  width: 102px;
+  height: 47px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.78px;
+  margin-right: 170px;
+  margin-top: 6px;
+  color: #52719f;
+}
+.header__coin::before {
+  content: url(/images/Vector.png);
+}
+.header__coin__item:hover {
+  color: #3c3c3c;
+}
+.header__coin__item:active {
+  color: #8bb47d;
+}
+.main__title {
+  font-size: 28px;
+  font-weight: 600;
+  padding-top: 32px;
+  padding-left: 27px;
+}
+.main {
+  background-color: #ebebeb;
+  width: 1440px;
+  height: 1023px;
+}
+.main__items {
+  width: 1370px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main__blocks {
+  width: 304px;
+  height: 393px;
+  background-color: #ffffff;
+  position: relative;
+  margin: 20px 0;
+}
+.item__bgrnd {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.status {
+  position: absolute;
+  width: 73px;
+  height: 20px;
+  left: 10px;
+  top: 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.status--orange {
+  background: #dfad63;
+}
+.item__logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 190px;
+  left: 15px;
+}
+.item__names {
+  width: 80px;
+  height: 14px;
+  position: absolute;
+  left: 73px;
+  top: 190px;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+}
+.item__title {
+  position: absolute;
+  left: 70px;
+  top: 210px;
+  width: 214px;
+  height: 63px;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 21px;
+}
+.item__outline {
+  position: absolute;
+  width: 214px;
+  height: 32px;
+  left: 70px;
+  top: 280px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+.btn {
+  width: 200px;
+  height: 32px;
+  border-radius: 2px;
+  position: absolute;
+  left: 70px;
+  bottom: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-style: none;
+}
+.btn--orange {
+  background: #dfad63;
+}
+.btn--orange:hover {
+  background: #f6b758;
+}
+.btn--orange:focus {
+  border: 2px solid #f6b758;
+}
+.status--green {
+  background: #8bb47d;
+}
+.btn--green {
+  background: #8bb47d;
+}
+.btn--green:hover {
+  background: #82dc64;
+}
+.btn--green:focus {
+  border: 2px solid #82dc64;
+}
+.status--blue {
+  background: #5982c0;
+}
+.btn--blue {
+  background: #5982c0;
+}
+.btn--blue:hover {
+  background: #679ceb;
+}
+.btn--blue:focus {
+  border: 2px solid #679ceb;
+}
+.status--grey {
+  background: #a0a0a0;
+}
+.btn--grey {
+  background: #a0a0a0;
+}
+.btn--grey:hover {
+  background: #c1c1c1;
+}
+.btn--grey:focus {
+  border: 2px solid #c1c1c1;
+}
+.footer {
+  width: 1440px;
+  height: 128px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.footer__menu {
+  display: flex;
+  padding-top: 15px;
+  margin-right: 240px;
+}
+.footer__item {
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.18px;
+}
+.footer__item:hover {
+  text-decoration: underline;
+}
+.footer__item:active {
+  color: #8bb47d;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    width: 48%;
+  }
+  .main__blocks {
+    width: 48%;
+  }
+  .footer {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main__blocks {
+    width: 100%;
+  }
+  .main__blocks {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .header__online,
+  .header__coin {
+    display: none;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .header__burger-menu {
+    display: none;
+  }
+}
